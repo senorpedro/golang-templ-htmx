@@ -31,7 +31,7 @@ func main() {
 		}
 
 		w.WriteHeader(http.StatusBadRequest)
-		w.Write([]byte("400 - only POST allowed!"))
+		w.Write([]byte("400 - only GET allowed!"))
 	})
 
 	mux.HandleFunc("/post", func(w http.ResponseWriter, r *http.Request) {
