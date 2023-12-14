@@ -1,0 +1,31 @@
+package main
+
+templ form() {
+	<form hx-post="/post" hx-target="#username" hx-swap="innerHTML">
+		<input type="text" name="username"/>
+		<div><button type="submit">Send</button></div>
+	</form>
+}
+
+templ hello(username string) {
+	if username == "" {
+		<div>OHH No Username</div>
+	} else {
+		<div>Hello, { username }</div>
+	}
+}
+
+templ page(username string) {
+	<!DOCTYPE html>
+	<html>
+		<body>
+			<h1>
+				<div id="username">
+					@hello(username)
+				</div>
+			</h1>
+			@form()
+			<script src="https://unpkg.com/htmx.org@1.9.9"></script>
+		</body>
+	</html>
+}
