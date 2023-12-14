@@ -1,6 +1,8 @@
 # Golang + Templ + HTMLX
 
-## Small dummy app for testing those technologies in combination
+Small dummy app for testing those technologies in combination
+
+**Features**
 
 - Go HTTP Server
 - Templ templates
@@ -8,7 +10,9 @@
 - auto-rebuild via air (server is rebuild on file changes,
   browser still needs to be manually reloaded via CTRL-r)
 
-## usage
+## Usage
 
+```
 $ go install github.com/cosmtrek/air@latest
 $ go mod tidy
+```
