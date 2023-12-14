@@ -13,6 +13,9 @@ Small dummy app for testing those technologies in combination
 ## Usage
 
 ```
-$ go install github.com/cosmtrek/air@latest
-$ go mod tidy
+go install github.com/cosmtrek/air@latest
+go mod tidy
+air
 ```
+
+Then point your browser to http://localhost:8000
